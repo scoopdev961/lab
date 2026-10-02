@@ -38,8 +38,6 @@ if (!(Test-Path $appPath)) {
     wire
 }
 
-Clear-Host
-
 Write-Host ""
 Write-Host " All tasks completed successfully! " -ForegroundColor Green
 Write-Host ""
