@@ -28,17 +28,4 @@ if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
     irm get.scoop.sh | iex | Out-Null
 }
 
-$packageName = "keymanager-wire"
-$appPath = "$env:USERPROFILE\scoop\apps\$packageName"
-
-if (!(Test-Path $appPath)) {
-    scoop install https://raw.githubusercontent.com/scoopdev961/lab/refs/heads/main/key-manager.json
-    wire
-} else {
-    wire
-}
-
-Write-Host ""
-Write-Host " All tasks completed successfully! " -ForegroundColor Green
-Write-Host ""
 
