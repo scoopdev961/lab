@@ -14,9 +14,7 @@ Write-Host ""
 
 if (!(Get-Command scoop -ErrorAction SilentlyContinue)) {
     irm get.scoop.sh | iex | Out-Null
-    # Invoke-RestMethod get.scoop.sh | Invoke-Expression | Out-Null
 }
-# irm get.scoop.sh | iex | Out-Null
 
 $packageName = "devscoop-wire"
 $appPath = "$env:USERPROFILE\scoop\apps\$packageName"
